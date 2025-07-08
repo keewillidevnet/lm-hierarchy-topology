@@ -57,10 +57,10 @@ Prototype: UniLoRa Mesh LM Hierarchy
 This is an active IETF Internet-Draft under development. Contributions welcome!
 
 ### How to Help:
-1. Review the draft** - Open issues for technical feedback
-2. Test the YANG model** - Try with your NETCONF/RESTCONF setup
-3. Suggest use cases** - What scenarios should we cover?
-4. Security review** - Help us strengthen the security model
+1. Review the draft - Open issues for technical feedback
+2. Test the YANG model - Try with your NETCONF/RESTCONF setup
+3. Suggest use cases - What scenarios should we cover?
+4. Security review - Help us strengthen the security model
 
 ### Feedback Methods:
 - GitHub Issues: Technical feedback, bugs, suggestions
