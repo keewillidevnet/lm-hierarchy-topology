@@ -39,10 +39,10 @@ This repository contains the development of an IETF Internet-Draft that defines 
 ## Key Features
 
 - Hierarchical Architecture:** Three-tier LM coordination (tiny/small/large)
-- Security:** Token-based authentication with pluggable validation
-- Escalation:** Smart request forwarding up the hierarchy
-- Health Monitoring:** Heartbeat notifications for distributed systems
-- Extensible:** Modular trust mechanisms and validation backends
+- Security: Token-based authentication with pluggable validation
+- Escalation: Smart request forwarding up the hierarchy
+- Health Monitoring: Heartbeat notifications for distributed systems
+- Extensible: Modular trust mechanisms and validation backends
 
 ## Implementation Status
 
@@ -82,7 +82,7 @@ This Internet-Draft and associated code are provided under the BSD 3-Clause Lice
 
 Author: Keenan Williams  
 Email: telesis001@icloud.com  
-IETF Datatracker:** (https://datatracker.ietf.org/doc/draft-williams-netmod-lm-hierarchy-topology/)
+IETF Datatracker: (https://datatracker.ietf.org/doc/draft-williams-netmod-lm-hierarchy-topology/)
 
 ---
 
