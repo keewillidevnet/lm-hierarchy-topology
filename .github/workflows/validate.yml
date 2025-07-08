@@ -1,0 +1,68 @@
+name: YANG Validation
+
+on:
+  push:
+    branches: [ main, develop ]
+    paths: 
+      - 'yang/**/*.yang'
+      - 'draft-*.txt'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'yang/**/*.yang'
+      - 'draft-*.txt'
+
+jobs:
+  validate-yang:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+        
+    - name: Install pyang and dependencies
+      run: |
+        pip install pyang
+        pip install lxml
+        
+    - name: Download IETF YANG modules
+      run: |
+        mkdir -p ietf-yang-modules
+        wget -O ietf-yang-modules/ietf-inet-types@2013-07-15.yang https://raw.githubusercontent.com/YangModels/yang/master/standard/ietf/RFC/ietf-inet-types@2013-07-15.yang
+        wget -O ietf-yang-modules/ietf-yang-types@2013-07-15.yang https://raw.githubusercontent.com/YangModels/yang/master/standard/ietf/RFC/ietf-yang-types@2013-07-15.yang
+        
+    - name: Validate YANG syntax
+      run: |
+        echo "🔍 Validating YANG syntax..."
+        for yangfile in yang/*.yang; do
+          echo "Checking: $yangfile"
+          pyang --path=ietf-yang-modules --strict "$yangfile"
+        done
+        
+    - name: Check IETF guidelines compliance  
+      run: |
+        echo "📋 Checking IETF guidelines (RFC 8407)..."
+        for yangfile in yang/*.yang; do
+          echo "IETF compliance check: $yangfile"
+          pyang --path=ietf-yang-modules --ietf "$yangfile"
+        done
+        
+    - name: Generate tree representation
+      run: |
+        echo "🌲 Generating YANG tree..."
+        mkdir -p outputs
+        for yangfile in yang/*.yang; do
+          basename=$(basename "$yangfile" .yang)
+          pyang --path=ietf-yang-modules -f tree "$yangfile" > "outputs/${basename}-tree.txt"
+        done
+        
+    - name: Upload validation artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: yang-validation-outputs
+        path: outputs/
