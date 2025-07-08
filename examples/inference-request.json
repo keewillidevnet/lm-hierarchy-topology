@@ -1,0 +1,11 @@
+{
+  "ietf-lm-hierarchy:lm-request": {
+    "input": {
+      "auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsYXJnZS1sbS0wMDEiLCJzdWIiOiJ0aW55LWxtLTA4OSIsInNjb3BlIjpbImluZmVyZW5jZSIsInN1bW1hcml6YXRpb24iXSwiZXhwIjoiMjAyNS0wNy0wNlQxNjowMDowMFoiLCJpYXQiOiIyMDI1LTA3LTA2VDE1OjAwOjAwWiIsIm5vbmNlIjoiM2U4ZjViNWItYzIxZS00N2EwLTkyYTItMWY2YWQ5MTllZjU1In0.example_signature",
+      "source-node": "tiny-lm-089",
+      "target-node": "small-lm-042",
+      "request-type": "inference",
+      "payload": "What is the optimal path for IoT sensor data aggregation in a smart city deployment?"
+    }
+  }
+}
