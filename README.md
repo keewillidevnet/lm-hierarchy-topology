@@ -38,7 +38,7 @@ This repository contains the development of an IETF Internet-Draft that defines 
 
 ## Key Features
 
-- Hierarchical Architecture:** Three-tier LM coordination (tiny/small/large)
+- Hierarchical Architecture: Three-tier LM coordination (tiny/small/large)
 - Security: Token-based authentication with pluggable validation
 - Escalation: Smart request forwarding up the hierarchy
 - Health Monitoring: Heartbeat notifications for distributed systems
