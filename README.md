@@ -8,19 +8,21 @@ This repository contains the development of an IETF Internet-Draft that defines 
 
 ## Repository Structure
 
-├── draft-williams-netmod-lm-hierarchy-topology.txt   # Latest I-D text
-├── yang/                                             # YANG modules
-│   └── ietf-lm-hierarchy@2025-07-06.yang             # Main data model
-├── examples/                                         # Usage examples
-│   ├── basic-topology.json                           # Simple 3-tier setup
-│   └── edge-deployment.json                          # IoT/edge scenario
-├── implementation/                                   # Reference implementations
-│   └── unilora-mesh/                                 # Prototype code
-├── docs/                                             # Additional documentation
-│   ├── use-cases.md                                  # Detailed use cases
-│   └── security-analysis.md                          # Extended security notes
-└── .github/workflows/                                # CI/CD automation
-└── validate.yml                                      # YANG validation
+<pre>
+├── draft-williams-netmod-lm-hierarchy-topology-00.txt    # Latest I-D text
+├── yang/                                                 # YANG modules
+│   └── ietf-lm-hierarchy@2025-07-06.yang                 # Main data model
+├── examples/                                             # Usage examples
+│   ├── basic-node-config.json                            # Single node configuration
+│   ├── inference-request.json                            # RPC request example
+│   └── multi-tier-topology.json                          # Complete hierarchy setup
+├── implementation/                                       # Reference implementations
+│   └── README.md                                         # UniLoRa prototype status
+├── docs/                                                 # Additional documentation
+│   └── use-cases.md                                      # Detailed use cases
+└── .github/workflows/                                    # CI/CD automation
+    └── validate.yml                                      # YANG validation
+</pre>
 
 ## Quick Start
 
