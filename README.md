@@ -70,7 +70,7 @@ This is an active IETF Internet-Draft under development. Contributions welcome!
 
 ## IETF Process
 
-- Working Group: [NETMOD](https://datatracker.ietf.org/wg/netmod/)
+- Working Group: [NETMOD] https://datatracker.ietf.org/wg/netmod
 - Current Status: Individual draft, seeking WG adoption
 - Next Steps: Present to NETMOD, incorporate feedback, iterate
 
@@ -82,7 +82,7 @@ This Internet-Draft and associated code are provided under the BSD 3-Clause Lice
 
 Author: Keenan Williams  
 Email: telesis001@icloud.com  
-IETF Datatracker: (https://datatracker.ietf.org/doc/draft-williams-netmod-lm-hierarchy-topology/)
+IETF Datatracker: https://datatracker.ietf.org/doc/draft-williams-netmod-lm-hierarchy-topology
 
 ---
 
