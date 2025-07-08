@@ -1,6 +1,6 @@
 # Hierarchical Topology for Language Model Coordination
 
-IETF Internet-Draft:** `draft-williams-netmod-lm-hierarchy-topology-00`
+IETF Internet-Draft: `draft-williams-netmod-lm-hierarchy-topology-00`
 
 ## Overview
 
