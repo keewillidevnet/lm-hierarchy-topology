@@ -1,0 +1,10 @@
+{
+  "ietf-lm-hierarchy:lm-node": {
+    "node-id": "tiny-lm-089",
+    "node-type": "ietf-lm-hierarchy:tiny-lm",
+    "trust": {
+      "trust-anchor": "-----BEGIN PUBLIC KEY-----\n...",
+      "token-scope-enforced": true
+    }
+  }
+}
