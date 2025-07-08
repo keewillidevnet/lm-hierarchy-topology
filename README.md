@@ -38,11 +38,11 @@ This repository contains the development of an IETF Internet-Draft that defines 
 
 ## Key Features
 
-- **🏗️ Hierarchical Architecture:** Three-tier LM coordination (tiny/small/large)
-- **🔐 Security:** Token-based authentication with pluggable validation
-- **📡 Escalation:** Smart request forwarding up the hierarchy
-- **💓 Health Monitoring:** Heartbeat notifications for distributed systems
-- **🔧 Extensible:** Modular trust mechanisms and validation backends
+- ** Hierarchical Architecture:** Three-tier LM coordination (tiny/small/large)
+- ** Security:** Token-based authentication with pluggable validation
+- ** Escalation:** Smart request forwarding up the hierarchy
+- ** Health Monitoring:** Heartbeat notifications for distributed systems
+- ** Extensible:** Modular trust mechanisms and validation backends
 
 ## Implementation Status
 
@@ -57,10 +57,10 @@ This repository contains the development of an IETF Internet-Draft that defines 
 This is an active IETF Internet-Draft under development. Contributions welcome!
 
 ### How to Help:
-1. **📝 Review the draft** - Open issues for technical feedback
-2. **🧪 Test the YANG model** - Try with your NETCONF/RESTCONF setup
-3. **💡 Suggest use cases** - What scenarios should we cover?
-4. **🔍 Security review** - Help us strengthen the security model
+1. ** Review the draft** - Open issues for technical feedback
+2. ** Test the YANG model** - Try with your NETCONF/RESTCONF setup
+3. ** Suggest use cases** - What scenarios should we cover?
+4. ** Security review** - Help us strengthen the security model
 
 ### Feedback Methods:
 - **GitHub Issues:** Technical feedback, bugs, suggestions
@@ -91,4 +91,4 @@ This Internet-Draft and associated code are provided under the BSD 3-Clause Lice
 - [RFC 8345](https://tools.ietf.org/html/rfc8345) - Network Topologies Data Model  
 - [RFC 8407](https://tools.ietf.org/html/rfc8407) - YANG Module Guidelines
 
-### Star ⭐ this repo if you find it useful!
+### Star this repo if you find it useful!
