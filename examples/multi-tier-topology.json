@@ -1,0 +1,74 @@
+{
+  "description": "Example 3-tier LM hierarchy deployment for edge-to-cloud AI coordination",
+  "topology": {
+    "large-lm": {
+      "ietf-lm-hierarchy:lm-node": {
+        "node-id": "large-lm-001", 
+        "node-type": "ietf-lm-hierarchy:large-lm",
+        "trust": {
+          "trust-anchor": "self-signed-root-ca",
+          "token-scope-enforced": true
+        }
+      }
+    },
+    "small-lm-tier": [
+      {
+        "ietf-lm-hierarchy:lm-node": {
+          "node-id": "small-lm-042",
+          "node-type": "ietf-lm-hierarchy:small-lm", 
+          "trust": {
+            "trust-anchor": "large-lm-001-public-key",
+            "token-scope-enforced": true
+          }
+        }
+      },
+      {
+        "ietf-lm-hierarchy:lm-node": {
+          "node-id": "small-lm-043",
+          "node-type": "ietf-lm-hierarchy:small-lm",
+          "trust": {
+            "trust-anchor": "large-lm-001-public-key", 
+            "token-scope-enforced": true
+          }
+        }
+      }
+    ],
+    "tiny-lm-tier": [
+      {
+        "ietf-lm-hierarchy:lm-node": {
+          "node-id": "tiny-lm-089",
+          "node-type": "ietf-lm-hierarchy:tiny-lm",
+          "trust": {
+            "trust-anchor": "small-lm-042-public-key",
+            "token-scope-enforced": true
+          }
+        }
+      },
+      {
+        "ietf-lm-hierarchy:lm-node": {
+          "node-id": "tiny-lm-090", 
+          "node-type": "ietf-lm-hierarchy:tiny-lm",
+          "trust": {
+            "trust-anchor": "small-lm-042-public-key",
+            "token-scope-enforced": true
+          }
+        }
+      },
+      {
+        "ietf-lm-hierarchy:lm-node": {
+          "node-id": "tiny-lm-091",
+          "node-type": "ietf-lm-hierarchy:tiny-lm", 
+          "trust": {
+            "trust-anchor": "small-lm-043-public-key",
+            "token-scope-enforced": true
+          }
+        }
+      }
+    ]
+  },
+  "deployment-notes": {
+    "large-lm": "Deployed on cloud infrastructure with GPU acceleration",
+    "small-lm": "Raspberry Pi 5 devices acting as local aggregators", 
+    "tiny-lm": "ESP32-based edge devices with LoRa connectivity"
+  }
+}
