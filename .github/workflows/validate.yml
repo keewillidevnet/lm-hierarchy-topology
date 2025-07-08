@@ -27,6 +27,7 @@ jobs:
         
     - name: Install pyang and dependencies
       run: |
+        pip install setuptools
         pip install pyang
         pip install lxml
         
