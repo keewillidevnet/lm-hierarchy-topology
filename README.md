@@ -27,7 +27,7 @@ This repository contains the development of an IETF Internet-Draft that defines 
 ## Quick Start
 
 ### Viewing the Draft
-- Latest version: [draft-williams-netmod-lm-hierarchy-topology.txt](draft-williams-netmod-lm-hierarchy-topology.txt)
+- Latest version: [draft-williams-netmod-lm-hierarchy-topology](https://datatracker.ietf.org/doc/draft-williams-netmod-lm-hierarchy-topology/)
 - IETF Datatracker: [Coming soon]
 - HTML version: [GitHub Pages link when available]
 
